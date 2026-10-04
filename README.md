@@ -35,7 +35,7 @@
 
 ### 🪟 Windows (1-Click)
 
-1. [Download the latest release ZIP](https://github.com/Roskud/epic-mickey-2-60fps-unlock/releases) (or clone the repository).
+1. **[Download ZIP Archive (Direct Download)](https://github.com/Roskud/epic-mickey-2-60fps-unlock/archive/refs/heads/main.zip)** (or clone the repository).
 2. Extract the archive.
 3. Double-click **`install.bat`**.
    - *The script automatically locates your Steam game installation, creates backups, installs the patched 60 FPS binary, and updates the configuration.*

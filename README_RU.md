@@ -142,6 +142,12 @@ epic-mickey-2-60fps-unlock/
 
 ---
 
+## 🏷️ Теги и ключевые слова для поиска
+
+`disney-epic-mickey-2` · `epic-mickey-2` · `epic-mickey` · `60fps` · `разблокировка-60-fps` · `steam-deck` · `steamos` · `proton` · `linux` · `gamebryo` · `pcgamingwiki` · `ошибка-3:0000065432` · `бросок-освальда-фикс` · `мод-epic-mickey` · `патч`
+
+---
+
 ## 📜 Лицензия
 
 Проект распространяется под лицензией [MIT](LICENSE).

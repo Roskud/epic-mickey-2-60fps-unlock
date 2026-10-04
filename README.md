@@ -142,6 +142,12 @@ epic-mickey-2-60fps-unlock/
 
 ---
 
+## 🏷️ Tags & Search Keywords
+
+`disney-epic-mickey-2` · `epic-mickey-2` · `epic-mickey` · `60fps` · `fps-unlock` · `steam-deck` · `steamos` · `proton` · `linux` · `gamebryo` · `pcgamingwiki` · `application-load-error-3:0000065432` · `oswald-toss-fix` · `framerate-unlock` · `mod` · `patch`
+
+---
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).

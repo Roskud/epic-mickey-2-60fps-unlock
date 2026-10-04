@@ -31,12 +31,24 @@
 
 ---
 
-## 📥 Установка
+## 📥 Скачать (Раздельные архивы без лишнего кода)
+
+Выберите нужный архив для вашей системы:
+
+| Версия / Назначение | Что внутри | Ссылка на скачивание |
+| :--- | :--- | :--- |
+| 🪟 **Для Windows** | Авто-установщик (`install.bat` + `patcher.ps1` + файлы мода) | [**Скачать ZIP для Windows (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Windows.zip) |
+| 🎮 **Для Steam Deck / Linux** | Скрипт в 1 клик для SteamOS (`install.sh` + файлы мода) | [**Скачать ZIP для Steam Deck (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_SteamDeck.zip) |
+| 🖐️ **Только готовые файлы** | Только готовые `DEM2.exe` и `ConfigFiles.ini` (для ручной замены) | [**Скачать ZIP готовых файлов (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Manual_Files.zip) |
+
+---
+
+## 🚀 Инструкция по установке
 
 ### 🪟 Windows (В 1 клик)
 
-1. **[Скачать архив ZIP (Прямая ссылка)](https://github.com/Roskud/epic-mickey-2-60fps-unlock/archive/refs/heads/main.zip)** (или склонируйте репозиторий).
-2. Распакуйте архив в любое удобное место.
+1. Скачайте **[EpicMickey2_60FPS_Windows.zip](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Windows.zip)**.
+2. Распакуйте архив в любое место.
 3. Запустите двойным кликом **`install.bat`**.
    - *Скрипт сам найдёт путь к установленной в Steam игре, сделает резервные копии, установит пропатченный бинарник 60 FPS и обновит настройки.*
 4. Запустите игру как обычно через **Steam**!
@@ -46,14 +58,10 @@
 ### 🎮 Steam Deck (SteamOS / Linux) (В 1 клик)
 
 1. Переведите Steam Deck в **Desktop Mode** (*Питание → Переключиться на рабочий стол*).
-2. Скачайте или перенесите папку с модом на консоль.
-3. Откройте папку, нажмите правой кнопкой мыши на **`install.sh`** → **Run in Konsole** (или откройте терминал в этой папке и выполните):
-   ```bash
-   chmod +x install.sh
-   ./install.sh
-   ```
-   - *Скрипт автоматически найдёт игру на встроенной памяти (`~/.local/share/Steam/...`) или на microSD (`/run/media/...`), применит фикс и выставит права на выполнение.*
-4. Переключитесь обратно в **Gaming Mode** и запускайте Epic Mickey 2 из библиотеки Steam!
+2. Скачайте **[EpicMickey2_60FPS_SteamDeck.zip](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_SteamDeck.zip)**.
+3. Распакуйте архив, нажмите правой кнопкой мыши на **`install.sh`** → **Run in Konsole** (или откройте терминал и выполните `./install.sh`).
+   - *Скрипт автоматически найдёт игру на встроенной памяти или на карте microSD, применит фикс и выставит права.*
+4. Переключитесь обратно в **Gaming Mode** и играйте!
 
 ---
 

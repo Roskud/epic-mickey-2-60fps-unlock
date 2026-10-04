@@ -31,11 +31,23 @@
 
 ---
 
-## 📥 Installation
+## 📥 Downloads
+
+Choose the package for your platform (clean standalone packages, no unnecessary source code):
+
+| Platform / Purpose | Description | Download Link |
+| :--- | :--- | :--- |
+| 🪟 **Windows (1-Click)** | Auto-installer (`install.bat` + `patcher.ps1` + mod files) | [**Download Windows ZIP (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Windows.zip) |
+| 🎮 **Steam Deck / Linux** | 1-Click script (`install.sh` for SteamOS + mod files) | [**Download Steam Deck ZIP (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_SteamDeck.zip) |
+| 🖐️ **Manual Files Only** | Only ready `DEM2.exe` & `ConfigFiles.ini` (Drag & drop) | [**Download Manual Files ZIP (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Manual_Files.zip) |
+
+---
+
+## 🚀 Installation Guide
 
 ### 🪟 Windows (1-Click)
 
-1. **[Download ZIP Archive (Direct Download)](https://github.com/Roskud/epic-mickey-2-60fps-unlock/archive/refs/heads/main.zip)** (or clone the repository).
+1. Download **[EpicMickey2_60FPS_Windows.zip](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Windows.zip)**.
 2. Extract the archive.
 3. Double-click **`install.bat`**.
    - *The script automatically locates your Steam game installation, creates backups, installs the patched 60 FPS binary, and updates the configuration.*
@@ -46,14 +58,10 @@
 ### 🎮 Steam Deck (SteamOS / Linux) (1-Click)
 
 1. Switch your Steam Deck to **Desktop Mode** (*Power → Switch to Desktop*).
-2. Download or copy the mod folder onto your Steam Deck.
-3. Open the folder, right-click **`install.sh`** → **Run in Konsole** (or open terminal in that folder and run):
-   ```bash
-   chmod +x install.sh
-   ./install.sh
-   ```
-   - *The script scans internal storage (`~/.local/share/Steam/...`) and all mounted microSD cards (`/run/media/...`), applies the fix, and sets execute permissions.*
-4. Switch back to **Gaming Mode** and launch Epic Mickey 2 from your library!
+2. Download **[EpicMickey2_60FPS_SteamDeck.zip](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_SteamDeck.zip)**.
+3. Extract the archive, right-click **`install.sh`** → **Run in Konsole** (or run `./install.sh` in terminal).
+   - *The script scans internal storage and microSD cards, installs the fix, and sets execute permissions.*
+4. Switch back to **Gaming Mode** and play!
 
 ---
 

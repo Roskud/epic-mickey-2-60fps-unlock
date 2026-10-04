@@ -140,9 +140,46 @@ if [ -f "$CONFIG_PATH" ]; then
     echo "    [+] Файл ConfigFiles.ini успешно настроен (60 FPS + Oswald Fix)"
 fi
 
+# 8. Auto-configure native Steam Deck 1280x800 resolution in Proton prefix (eliminates black bars)
+COMPAT_PATHS=(
+    "$HOME/.local/share/Steam/steamapps/compatdata/245300/pfx/drive_c/users/steamuser/AppData/Roaming/Disney Interactive Studios/Epic Mickey 2"
+    "$HOME/.steam/steam/steamapps/compatdata/245300/pfx/drive_c/users/steamuser/AppData/Roaming/Disney Interactive Studios/Epic Mickey 2"
+    "$HOME/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/compatdata/245300/pfx/drive_c/users/steamuser/AppData/Roaming/Disney Interactive Studios/Epic Mickey 2"
+)
+
+for cpath in "${COMPAT_PATHS[@]}"; do
+    if [ -d "$cpath" ]; then
+        APP_INI="$cpath/AppSettings.ini"
+        if [ ! -f "$APP_INI" ]; then
+            cat << 'EOF' > "$APP_INI"
+[Renderer]
+WindowWidth=1280
+WindowHeight=800
+WindowDisplayMode=2
+VSync=0
+AntiAliasing=1
+DynamicShadowQuality=3
+GroundingShadowQuality=3
+
+[Launcher]
+Language=1
+EOF
+            echo "    [+] Создан AppSettings.ini с нативным разрешением 1280x800 (без черных полос)"
+        else
+            sed -i -E 's/WindowWidth=[0-9]+/WindowWidth=1280/g' "$APP_INI"
+            sed -i -E 's/WindowHeight=[0-9]+/WindowHeight=800/g' "$APP_INI"
+            sed -i -E 's/WindowDisplayMode=[0-9]+/WindowDisplayMode=2/g' "$APP_INI"
+            sed -i -E 's/VSync=[0-9]+/VSync=0/g' "$APP_INI"
+            echo "    [+] Настроено нативное разрешение Steam Deck 1280x800 в AppSettings.ini"
+        fi
+        break
+    fi
+done
+
 echo ""
 echo "============================================================"
 echo "  [УСПЕХ] МОД 60 FPS УСПЕШНО УСТАНОВЛЕН!"
 echo "============================================================"
 echo "  Возвращайтесь в Gaming Mode и запускайте игру через Steam!"
 echo "============================================================"
+

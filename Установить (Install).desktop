@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Установить 60 FPS Фикс
+Comment=Установить 60 FPS для Disney Epic Mickey 2
+Exec=bash -c 'cd "$(dirname "%k")" && bash install.sh; echo ""; echo "Нажмите Enter для выхода..."; read'
+Icon=utilities-terminal
+Terminal=true
+Categories=Game;

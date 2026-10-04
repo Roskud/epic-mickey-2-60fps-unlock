@@ -31,15 +31,17 @@
 
 ---
 
-## 📥 Скачать (Раздельные архивы без лишнего кода)
+## 📥 Скачать и Релизы (Раздельные архивы)
 
 Выберите нужный архив для вашей системы:
 
 | Версия / Назначение | Что внутри | Ссылка на скачивание |
 | :--- | :--- | :--- |
-| 🪟 **Для Windows** | Авто-установщик (`install.bat` + `patcher.ps1` + файлы мода) | [**Скачать ZIP для Windows (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Windows.zip) |
-| 🎮 **Для Steam Deck / Linux** | Скрипт в 1 клик для SteamOS (`install.sh` + файлы мода) | [**Скачать ZIP для Steam Deck (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_SteamDeck.zip) |
-| 🖐️ **Только готовые файлы** | Только готовые `DEM2.exe` и `ConfigFiles.ini` (для ручной замены) | [**Скачать ZIP готовых файлов (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/raw/main/downloads/EpicMickey2_60FPS_Manual_Files.zip) |
+| 🪟 **Для Windows** | Авто-установщик (`install.bat` + `patcher.ps1` + файлы мода) | [**Скачать ZIP для Windows (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/releases/download/v1.0.0/EpicMickey2_60FPS_Windows.zip) |
+| 🎮 **Для Steam Deck / Linux** | Скрипт в 1 клик для SteamOS (`install.sh` + файлы мода) | [**Скачать ZIP для Steam Deck (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/releases/download/v1.0.0/EpicMickey2_60FPS_SteamDeck.zip) |
+| 🖐️ **Только готовые файлы** | Только готовые `DEM2.exe` и `ConfigFiles.ini` (для ручной замены) | [**Скачать ZIP готовых файлов (7.7 MB)**](https://github.com/Roskud/epic-mickey-2-60fps-unlock/releases/download/v1.0.0/EpicMickey2_60FPS_Manual_Files.zip) |
+
+*Также все официальные сборки и релизы доступны на вкладке [GitHub Releases](https://github.com/Roskud/epic-mickey-2-60fps-unlock/releases).*
 
 ---
 

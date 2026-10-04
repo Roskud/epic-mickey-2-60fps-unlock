@@ -1,0 +1,54 @@
+name: Publish GitHub Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create or Update GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="v1.0.0"
+          TITLE="v1.0.0 — Disney Epic Mickey 2: 60 FPS & Physics Fix"
+          
+          NOTES=$(cat << 'EOF'
+          ## 🎮 Disney Epic Mickey 2: The Power of Two — 60 FPS & Physics Fix
+
+          ### 📦 Download Packages (Выберите архив для вашей системы):
+          - **`EpicMickey2_60FPS_Windows.zip`**: 1-Click installer for Windows (`install.bat` + `patcher.ps1` + mod files).
+          - **`EpicMickey2_60FPS_SteamDeck.zip`**: 1-Click installer for Steam Deck / SteamOS (`install.sh` + mod files).
+          - **`EpicMickey2_60FPS_Manual_Files.zip`**: Pre-patched `DEM2.exe` and `ConfigFiles.ini` for manual drag & drop.
+
+          ### ✨ What's Included:
+          - Stable 60 FPS frame rate limit unlock.
+          - Oswald Toss Height fix (`Height=7.5`) to prevent Episode 2 progression softlock.
+          - Full Steam overlay, friends status, playtime and achievements support.
+          - 1-Click automatic backup & restore.
+          EOF
+          )
+
+          # Delete existing release for this tag if it was draft/partial
+          gh release delete "$TAG" --yes || true
+
+          # Create release and upload all 3 standalone packages
+          gh release create "$TAG" \
+            downloads/EpicMickey2_60FPS_Windows.zip \
+            downloads/EpicMickey2_60FPS_SteamDeck.zip \
+            downloads/EpicMickey2_60FPS_Manual_Files.zip \
+            --title "$TITLE" \
+            --notes "$NOTES" \
+            --latest

@@ -1,0 +1,7 @@
+# Ignore temporary and backup files
+*.bak
+*.unpacked.exe
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
